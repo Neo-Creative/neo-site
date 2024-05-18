@@ -33,7 +33,7 @@ export default function ProductImages({images}) {
             key={image}
             active={image===activeImage}
             onClick={() => setActiveImage(image)}>
-            <Image src={image} width={0} height={0} alt=""/>
+            <Image src={image} width={40} height={0} alt=""/>
           </ImageButton>
         ))}
       </div>
