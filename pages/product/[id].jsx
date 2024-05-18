@@ -20,7 +20,7 @@ export default function ProductPage({product}) {
             <div className="bg-white rounded p-10 w-96 h-96 single-product-div-1-1-1">
               <ProductImages images={product.images} />
             </div>
-            <div className="p-10 w-96 h-96 justify-between flex flex-col single-product-div-1-1-2">
+            <div className="p-10 w-96 h-auto md:h-96 justify-between flex flex-col single-product-div-1-1-2">
               <div className="">
                 <div className="text-2xl mb-5 text-main-dark">{product.title}</div>
                 <p className="text-sm text-main-dark">{product.description} </p>
