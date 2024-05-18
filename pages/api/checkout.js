@@ -40,7 +40,7 @@ export default async function handler(req,res) {
     streetAddress,district,paid:false,
   });
   
-  const session = '/cart?success=1';
+  const session = '/thank';
 
   res.json({
     url:session

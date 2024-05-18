@@ -98,7 +98,8 @@ export default function CartPage() {
 
     useEffect(() => {
         if (isSuccess) {
-            router.push('/thank'); // Use Next.js router for navigation
+            router.push('/thank');
+             // Use Next.js router for navigation
         }
     }, [isSuccess, router]);
 

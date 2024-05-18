@@ -9,6 +9,7 @@ export default function Thank() {
     const { cartProducts, addProduct, removeProduct, clearCart } = useContext(CartContext);
 
     clearCart();
+    localStorage.removeItem('cart');
 
   return (
     <>
