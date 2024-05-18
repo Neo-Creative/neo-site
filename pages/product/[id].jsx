@@ -14,6 +14,7 @@ export default function ProductPage({product}) {
     <>
       <BackButton />
       <Header />
+      <div className="w-full flex justify-center">
       <Center>
         <div className="p-10 single-product-div-1">
           <div className="flex justify-center items-center w-full single-product-div-1-1">
@@ -44,6 +45,7 @@ export default function ProductPage({product}) {
           </div>
         </div>
       </Center>
+      </div>
     </>
   );
 }

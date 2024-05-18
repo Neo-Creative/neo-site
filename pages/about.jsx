@@ -8,11 +8,11 @@ import logo from '../public/neologo.png'
 
 export default function about() {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen min-w-screen flex flex-col items-center'>
         <BackButton />
         <Header />
-        <Center>
-            <div className='p-24'>
+        <Center className="border border-black">
+            <div className='p-24 min-h-screen'>
                 <div className='w-full flex justify-center p-10' data-aos="fade">
                     <Image src={logo} alt='neo logo'  width={200}/>
                 </div>

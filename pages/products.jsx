@@ -16,7 +16,7 @@ export default function ProductsPage({products ,  loading}) {
   return (
     <>
       <Header />
-      <div className="w-full flex justify-center">
+      <div className="w-full min-h-screen flex justify-center">
         <Center>
             <div className="p-10">
                 <div className="text-2xl tracking-tight mb-10 ml-2" data-aos="fade-right">All Products</div>
