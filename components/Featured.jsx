@@ -18,12 +18,12 @@ export default function Featured({product}) {
       <div className='h-auto overflow-hidden featured-div-1'>
         <div className='w-full h-full flex flex-col md:flex-row feature-inner-1 items-center featured-div-2'>
           <div className='w-2/4 flex flex-col gap-3 p-10 featured-div-2-1' data-aos='fade-right'>
-            <h1 className='text-3xl tracking-wide text-main-dark'>{product.title}</h1>
+            <h1 className='text-3xl tracking-wide text-main-dark'>{product?.title}</h1>
             <p className='text-sm mb-4 mt-3 text-main-dark'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tenetur eligendi facilis delectus, accusamus provident iste quibusdam voluptatem aspernatur laboriosam reprehenderit explicabo corrupti aliquam, non alias consequatur numquam ipsum repudiandae?
+              {product?.description}
             </p>
             <div className='flex gap-3 featured-div-2-1-1'>
-              <Link href={'/product/'+product._id} className=''>
+              <Link href={'/product/'+product?._id} className=''>
                 <div className='border py-1 border-slate-600 px-3 text-center hover:border-slate-500 readmore-btn cursor-pointer'>
                   Read More
                 </div>

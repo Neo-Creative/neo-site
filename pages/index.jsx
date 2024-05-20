@@ -32,7 +32,7 @@ export async function getServerSideProps() {
 
   try {
     await mongooseConnect();
-    const featuredProductId = '66389b6c96bf6665f37cd69b';
+    const featuredProductId = '664b1c9789a45de583ce7afa';
     featuredProduct = await Product.findById(featuredProductId);
     newProducts = await Product.find({}, null, { sort: { '_id': -1 }, limit: 8 });
   } catch (error) {
