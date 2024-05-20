@@ -7,8 +7,11 @@ export default function Thank() {
     const { clearCart } = useContext(CartContext);
 
     useEffect(() => {
-        clearCart();
-        localStorage.removeItem('cart');
+        // Ensure this code runs only on the client side
+        if (typeof window !== 'undefined') {
+            clearCart();
+            localStorage.removeItem('cart');
+        }
     }, [clearCart]);
 
     const handleBackClick = () => {
