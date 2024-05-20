@@ -1,13 +1,14 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { CartContext } from '@/components/CartContext';
 import Header from '@/components/Header';
 import Center from '@/components/Center';
 
 export default function Thank() {
     const { clearCart } = useContext(CartContext);
+    const [hasMounted, setHasMounted] = useState(false);
 
     useEffect(() => {
-        // Ensure this code runs only on the client side
+        setHasMounted(true);
         if (typeof window !== 'undefined') {
             clearCart();
             localStorage.removeItem('cart');
@@ -17,6 +18,10 @@ export default function Thank() {
     const handleBackClick = () => {
         window.location.href = "/";
     };
+
+    if (!hasMounted) {
+        return null; // Prevent rendering on the server
+    }
 
     return (
         <>
