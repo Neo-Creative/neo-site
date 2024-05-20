@@ -31,7 +31,7 @@ export default function Header() {
       {loading && <Loading />}
       <header className='w-full px-10 pt-5 '>
           <div className={"flex justify-between w-full items-center flex-wrap gap-5"}>
-            <Link href={'/'} className='text-3xl flex items-center gap-3' data-aos='fade'>
+            <Link href={'https://neocreative.vercel.app/'} className='text-3xl flex items-center gap-3' data-aos='fade'>
               <Image
                 className='head-img'
                 src={logo}
