@@ -25,14 +25,14 @@ export default function CartPage() {
 
     useEffect(() => {
         const fetchData = async () => {
-            setLoading(true);
+            //setLoading(true);
             try {
                 const response = await axios.post('/api/cart', { ids: cartProducts });
                 setProducts(response.data);
             } catch (error) {
                 console.error("Error fetching data:", error.message);
             } finally {
-                setLoading(false);
+                //setLoading(false);
             }
         };
         fetchData();
