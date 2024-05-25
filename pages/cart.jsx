@@ -49,6 +49,10 @@ export default function CartPage() {
         removeProduct(id);
     }
 
+    function moreOfThisProduct(id) {
+        addProduct(id);
+    }
+
     async function placeOrder() {
         if (pickupFromStore) {
             if (!name || !contactNumber) {
