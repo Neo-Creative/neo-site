@@ -31,7 +31,7 @@ export default function Featured({product}) {
     <Center>
       <div  className='h-auto lg:min-h-screen overflow-hidden featured-div-1'>
         <div className='w-full h-full flex flex-col md:flex-row feature-inner-1 items-center featured-div-2'>
-          <div className='w-2/4 flex flex-col gap-3 py-10 featured-div-2-1'>
+          <div className='w-2/4 flex flex-col gap-3 pt-10 featured-div-2-1'>
             {/*<h1 className='text-3xl tracking-wide text-main-dark' data-aos='fade-right'>{product?.title}</h1>
             <p id='feturedDesc'  className='text-sm mb-4 mt-3 text-main-dark' data-aos='fade' data-aos-delay="500" data-aos-duration="2000">
               {product?.description}
